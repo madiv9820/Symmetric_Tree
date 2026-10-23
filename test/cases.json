@@ -1,0 +1,66 @@
+[
+  {
+    "title": "🪞 Perfect Mirror",
+    "input": {
+      "root": [1, 2, 2, 3, 4, 4, 3]
+    },
+    "output": true,
+    "description": "✨ Both subtrees are perfect mirror images."
+  },
+  {
+    "title": "💔 Broken Reflection",
+    "input": {
+      "root": [1, 2, 2, null, 3, null, 3]
+    },
+    "output": false,
+    "description": "🔍 Matching values appear in non-mirrored positions."
+  },
+  {
+    "title": "🌱 Single Node",
+    "input": {
+      "root": [1]
+    },
+    "output": true,
+    "description": "✅ A single-node tree is symmetric by definition."
+  },
+  {
+    "title": "🍃 Two Unequal Children",
+    "input": {
+      "root": [1, 2, 3]
+    },
+    "output": false,
+    "description": "⚖️ The left and right child values do not match."
+  },
+  {
+    "title": "🌳 Symmetric Tree with Missing Children",
+    "input": {
+      "root": [1, 2, 2, 3, null, null, 3]
+    },
+    "output": true,
+    "description": "🪞 Both sides have matching values and mirrored missing nodes."
+  },
+  {
+    "title": "🧩 Asymmetric Structure",
+    "input": {
+      "root": [1, 2, 2, 3, null, 3, null]
+    },
+    "output": false,
+    "description": "🚫 The child nodes occupy matching rather than mirrored positions."
+  },
+  {
+    "title": "🔢 Negative Node Values",
+    "input": {
+      "root": [-1, -2, -2, -3, 4, 4, -3]
+    },
+    "output": true,
+    "description": "✅ Negative and positive values can form a symmetric tree."
+  },
+  {
+    "title": "🌲 Deep Symmetric Tree",
+    "input": {
+      "root": [1, 2, 2, 3, 4, 4, 3, 5, null, null, 6, 6, null, null, 5]
+    },
+    "output": true,
+    "description": "💪 Multiple levels preserve the mirror-image structure."
+  }
+]

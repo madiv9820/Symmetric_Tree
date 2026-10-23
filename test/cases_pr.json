@@ -1,0 +1,202 @@
+[
+  {
+    "title": "🪞 Perfectly Symmetric Tree",
+    "input": {
+      "root": [1, 2, 2, 3, 4, 4, 3]
+    },
+    "output": true,
+    "description": "✅ Both subtrees mirror each other in values and structure."
+  },
+  {
+    "title": "💔 Asymmetric Tree",
+    "input": {
+      "root": [1, 2, 2, null, 3, null, 3]
+    },
+    "output": false,
+    "description": "❌ Identical values in non-mirrored positions break symmetry."
+  },
+  {
+    "title": "🌱 Single-Node Tree",
+    "input": {
+      "root": [1]
+    },
+    "output": true,
+    "description": "✅ A root without children is symmetric."
+  },
+  {
+    "title": "⚖️ Unequal Child Values",
+    "input": {
+      "root": [1, 2, 3]
+    },
+    "output": false,
+    "description": "🔍 Different left and right child values make the tree asymmetric."
+  },
+  {
+    "title": "🍃 Symmetric Tree with Missing Nodes",
+    "input": {
+      "root": [1, 2, 2, 3, null, null, 3]
+    },
+    "output": true,
+    "description": "🪞 Missing children occur in corresponding mirrored positions."
+  },
+  {
+    "title": "🧩 Same Values, Different Structure",
+    "input": {
+      "root": [1, 2, 2, 3, null, 3, null]
+    },
+    "output": false,
+    "description": "🚫 The child nodes are positioned identically rather than as mirror images."
+  },
+  {
+    "title": "🔢 Negative and Zero Values",
+    "input": {
+      "root": [0, -1, -1, -100, 0, 0, -100]
+    },
+    "output": true,
+    "description": "✅ Symmetry holds with negative values and zero."
+  },
+  {
+    "title": "🌳 Deep Symmetric Tree",
+    "input": {
+      "root": [1, 2, 2, 3, 4, 4, 3, 5, null, null, 6, 6, null, null, 5]
+    },
+    "output": true,
+    "description": "💪 Symmetry is preserved across multiple levels."
+  },
+  {
+    "title": "🚨 Deep Asymmetry",
+    "input": {
+      "root": [1, 2, 2, 3, 4, 4, 3, null, 5, null, null, null, 5]
+    },
+    "output": false,
+    "description": "🔍 A deeper structural mismatch causes the tree to fail symmetry."
+  },
+  {
+    "title": "🔝 Maximum Allowed Node Count",
+    "input": {
+      "root": "A symmetric binary tree containing 1000 nodes"
+    },
+    "output": true,
+    "description": "🧪 Validate correctness and performance at the upper node-count limit."
+  },
+  {
+    "title": "🌱 Minimum Tree",
+    "input": {"root": [0]},
+    "output": true,
+    "description": "✅ A tree containing only the root is symmetric."
+  },
+  {
+    "title": "🪞 Two Mirrored Children",
+    "input": {"root": [5, 8, 8]},
+    "output": true,
+    "description": "✅ Equal left and right children form a symmetric tree."
+  },
+  {
+    "title": "❌ Unequal Root Children",
+    "input": {"root": [5, 8, 9]},
+    "output": false,
+    "description": "⚖️ Different child values violate symmetry."
+  },
+  {
+    "title": "🍃 Both Children Missing",
+    "input": {"root": [1, null, null]},
+    "output": true,
+    "description": "✅ Two missing children preserve symmetry."
+  },
+  {
+    "title": "🧩 Left Child Only",
+    "input": {"root": [1, 2]},
+    "output": false,
+    "description": "🚫 A left child without a matching right child breaks symmetry."
+  },
+  {
+    "title": "🧩 Right Child Only",
+    "input": {"root": [1, null, 2]},
+    "output": false,
+    "description": "🚫 A right child without a matching left child breaks symmetry."
+  },
+  {
+    "title": "🔄 Mirrored Grandchildren",
+    "input": {"root": [1, 2, 2, 3, null, null, 3]},
+    "output": true,
+    "description": "🪞 Matching grandchildren occupy opposite positions."
+  },
+  {
+    "title": "💔 Same Values, Wrong Positions",
+    "input": {"root": [1, 2, 2, 3, null, 3, null]},
+    "output": false,
+    "description": "🔍 Equal values cannot compensate for incorrect mirrored positions."
+  },
+  {
+    "title": "🌳 Symmetric Zigzag",
+    "input": {"root": [1, 2, 2, null, 3, 3, null]},
+    "output": true,
+    "description": "↔️ Opposing zigzag branches form mirror images."
+  },
+  {
+    "title": "🚧 One-Sided Zigzag",
+    "input": {"root": [1, 2, 2, null, 3, null, null]},
+    "output": false,
+    "description": "❌ A zigzag branch without its mirror makes the tree asymmetric."
+  },
+  {
+    "title": "🔢 Negative Root and Children",
+    "input": {"root": [-10, -20, -20, -30, 40, 40, -30]},
+    "output": true,
+    "description": "✅ Negative node values do not affect mirror symmetry."
+  },
+  {
+    "title": "🎯 Zero Versus Negative One",
+    "input": {"root": [0, 0, -1]},
+    "output": false,
+    "description": "🔍 Even a small value difference breaks symmetry."
+  },
+  {
+    "title": "🔝 Maximum Positive Values",
+    "input": {"root": [100, 100, 100]},
+    "output": true,
+    "description": "✅ Symmetry holds at the maximum allowed node value."
+  },
+  {
+    "title": "🔻 Minimum Negative Values",
+    "input": {"root": [-100, -100, -100]},
+    "output": true,
+    "description": "✅ Symmetry holds at the minimum allowed node value."
+  },
+  {
+    "title": "🌲 Deep Mirrored Branches",
+    "input": {"root": [1, 2, 2, 3, 4, 4, 3, 5, 6, 7, 8, 8, 7, 6, 5]},
+    "output": true,
+    "description": "💪 Multiple levels of mirrored nodes remain symmetric."
+  },
+  {
+    "title": "🕵️ Deep Value Mismatch",
+    "input": {"root": [1, 2, 2, 3, 4, 4, 3, 5, 6, 7, 9, 9, 7, 6, 5]},
+    "output": false,
+    "description": "❌ A single mismatched value deep in the tree breaks symmetry."
+  },
+  {
+    "title": "🧱 Deep Structural Mismatch",
+    "input": {"root": [1, 2, 2, 3, 4, 4, 3, 5, null, 7, 8, 8, 7, null, 5]},
+    "output": false,
+    "description": "🚫 A missing node in a mirrored position breaks symmetry."
+  },
+  {
+    "title": "🔁 Repeated Node Values",
+    "input": {"root": [7, 7, 7, 7, 7, 7, 7]},
+    "output": true,
+    "description": "✅ Repeated values are symmetric when the structure mirrors correctly."
+  },
+  {
+    "title": "⚠️ Repeated Values, Asymmetric Structure",
+    "input": {"root": [7, 7, 7, 7, null, 7, null]},
+    "output": false,
+    "description": "🔍 Equal values alone cannot establish structural symmetry."
+  },
+  {
+    "title": "🌿 Asymmetric at the First Level",
+    "input": {"root": [1, 2, 2, 3, null, null, 4]},
+    "output": false,
+    "description": "❌ Different outer grandchildren immediately break symmetry."
+  }
+]
