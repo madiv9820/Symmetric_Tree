@@ -1,7 +1,11 @@
 """🌳 Determine whether a binary tree is symmetric."""
 from typing import Optional
 from treenode import TreeNode
-from .approaches import RecursiveDFS, IterativeDFS
+from .approaches import (
+    RecursiveDFS, 
+    IterativeDFS, 
+    IterativeBFS,
+)
 
 class Solution:
     """🧩 Provide a solution for checking tree symmetry."""
@@ -17,5 +21,6 @@ class Solution:
         """
         recursiveDFS: RecursiveDFS = RecursiveDFS()
         iterativeDFS: IterativeDFS = IterativeDFS()
+        iterativeBFS: IterativeBFS = IterativeBFS()
 
-        return iterativeDFS.isSymmetric(root)
+        return iterativeBFS.isSymmetric(root)
